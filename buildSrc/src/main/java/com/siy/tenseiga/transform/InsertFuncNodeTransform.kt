@@ -119,7 +119,7 @@ class InsertFuncNodeTransform(
                     add(MethodInsnNode(Opcodes.INVOKESTATIC, info.hookClass, info.hookMethodNode.name, info.hookMethodNode.desc, false))
                 })
 
-                jisuanShijian(method)
+//                jisuanShijian(method)
             }
         }
     }
