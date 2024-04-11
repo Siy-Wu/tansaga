@@ -11,7 +11,7 @@
   "createdBy": {
     "gradle": {
       "version": "6.1.1",
-      "buildId": "tcscb3ldrranvc62qv45aw66wq"
+      "buildId": "hduhm4nilfdhdkpvc27d3osheu"
     }
   },
   "variants": [
@@ -30,11 +30,11 @@
         {
           "name": "tenseiga-plugin-1.0.0.jar",
           "url": "tenseiga-plugin-1.0.0.jar",
-          "size": 175644,
-          "sha512": "eb58625e844838ad57719c8d90ddf0e3e05e054080ede745d3faff8ef4149d733b79389cc97ba1db21cc0a559c44813ec6a662d2c420b5fa87fce00a9bc3fea9",
-          "sha256": "28ff58179b4c5acac30df0458781752e5eff5410cadd9b05ef2744df686ae118",
-          "sha1": "3c03c672c0b46f52687556cb3b0e8c3983532381",
-          "md5": "13392896f56aead108aca088f266c0fc"
+          "size": 183742,
+          "sha512": "52c5fe6284a7581656f9545646f87dd02d3483356571bb2d597582e203b7d880b7db4427c26568aab136476a2c1cc6db9f830e73e9230847d6d6987c62870bf7",
+          "sha256": "94842dcc9a5f50ebf4a411a63dd3f90d90d2edcf66e03789bb448649404b3c61",
+          "sha1": "37c617932f2962aee9d008193be68fd41ea99418",
+          "md5": "7587ace2b8ebe236eaa2dda9cc5cfabd"
         }
       ]
     },
@@ -76,11 +76,11 @@
         {
           "name": "tenseiga-plugin-1.0.0.jar",
           "url": "tenseiga-plugin-1.0.0.jar",
-          "size": 175644,
-          "sha512": "eb58625e844838ad57719c8d90ddf0e3e05e054080ede745d3faff8ef4149d733b79389cc97ba1db21cc0a559c44813ec6a662d2c420b5fa87fce00a9bc3fea9",
-          "sha256": "28ff58179b4c5acac30df0458781752e5eff5410cadd9b05ef2744df686ae118",
-          "sha1": "3c03c672c0b46f52687556cb3b0e8c3983532381",
-          "md5": "13392896f56aead108aca088f266c0fc"
+          "size": 183742,
+          "sha512": "52c5fe6284a7581656f9545646f87dd02d3483356571bb2d597582e203b7d880b7db4427c26568aab136476a2c1cc6db9f830e73e9230847d6d6987c62870bf7",
+          "sha256": "94842dcc9a5f50ebf4a411a63dd3f90d90d2edcf66e03789bb448649404b3c61",
+          "sha1": "37c617932f2962aee9d008193be68fd41ea99418",
+          "md5": "7587ace2b8ebe236eaa2dda9cc5cfabd"
         }
       ]
     }

@@ -23,7 +23,7 @@ compileTestKotlin {
 sourceSets {
     main {
         java {
-            srcDirs += ["..\\buildSrc\\src\\main\\java"]
+            srcDirs += ["..\\buildSrc\\src\\main\\java","..\\tenseiga-base\\src\\main\\java"]
         }
     }
 }
@@ -37,14 +37,14 @@ repositories {
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar", "*.aar"])
-    implementation fileTree(dir: '..\\buildSrc\\libs', include: ['*.jar'])
+//    implementation fileTree(dir: '..\\buildSrc\\libs', include: ['*.jar'])
 
     compileOnly localGroovy()
     compileOnly gradleApi()
 
     implementation  "com.android.tools.build:gradle:3.4.3"
 
-
+//    implementation project(':tenseiga-base')
     /* 👇👇👇👇 引用这两个模块 👇👇👇👇 */
     implementation "com.didiglobal.booster:booster-api:3.2.0"
     implementation "com.didiglobal.booster:booster-transform-asm:3.2.0"
