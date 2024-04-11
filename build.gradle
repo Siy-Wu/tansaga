@@ -7,14 +7,16 @@ buildscript {
     repositories {
         mavenCentral()
         google()
-        jcenter()
         maven { url 'https://jitpack.io' }
+          maven{
+            url "localrepo"
+        }
     }
     dependencies {
         classpath "com.android.tools.build:gradle:3.4.3"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlin_v}"
 
-        //classpath "com.github.ssiyy.tenseiga:tenseiga-plugin:v1.0.4"
+        classpath 'coder.siy:tenseiga-plugin:1.0.0'
         /* 👇👇👇👇 引用 Booster Gradle 插件 👇👇👇👇 */
       //  classpath "com.didiglobal.booster:booster-gradle-plugin:${rootProject.ext.booster_version}"
     }
@@ -24,7 +26,6 @@ allprojects {
     repositories {
         mavenCentral()
         google()
-        jcenter()
         maven { url "https://jitpack.io" }
     }
 }

@@ -94,7 +94,7 @@ public class HookJava {
     }
 
     @InsertFunc
-    @Filter(include = {"com.siy.tenseiga.test.OriginJava","com.siy.tenseiga.MainActivity"})
+//    @Filter(include = {"com.siy.tenseiga.test.OriginJava","com.siy.tenseiga.MainActivity"})
     public static void insertFunction_2() {
 
     }

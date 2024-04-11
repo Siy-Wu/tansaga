@@ -1,0 +1,104 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "coder.siy",
+    "module": "tenseiga-plugin",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.1.1",
+      "buildId": "dyfyciidvzg3zpk35i7ohyvjja"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.5.31"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "tenseiga-plugin-1.0.0.jar",
+          "url": "tenseiga-plugin-1.0.0.jar",
+          "size": 170150,
+          "sha512": "1897e6bb2b970492787d5632371fc98feba89c095cca8d9e366f963fd3729116b95d58dd9de7c2d24fe62cda19c43ac5786f9946885d7094e5e47a826d257f8c",
+          "sha256": "de7f77a063f1bc1445e5da1fbfa2f63c430167b5729b0d04d726efd2670cd770",
+          "sha1": "d1e90c05d4a4486fe0d715c95833686376a8fff5",
+          "md5": "49b8b4750c9ac9d2abce0375b7f5e325"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.android.tools.build",
+          "module": "gradle",
+          "version": {
+            "requires": "3.4.3"
+          }
+        },
+        {
+          "group": "com.didiglobal.booster",
+          "module": "booster-api",
+          "version": {
+            "requires": "3.2.0"
+          }
+        },
+        {
+          "group": "com.didiglobal.booster",
+          "module": "booster-transform-asm",
+          "version": {
+            "requires": "3.2.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.5.31"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "tenseiga-plugin-1.0.0.jar",
+          "url": "tenseiga-plugin-1.0.0.jar",
+          "size": 170150,
+          "sha512": "1897e6bb2b970492787d5632371fc98feba89c095cca8d9e366f963fd3729116b95d58dd9de7c2d24fe62cda19c43ac5786f9946885d7094e5e47a826d257f8c",
+          "sha256": "de7f77a063f1bc1445e5da1fbfa2f63c430167b5729b0d04d726efd2670cd770",
+          "sha1": "d1e90c05d4a4486fe0d715c95833686376a8fff5",
+          "md5": "49b8b4750c9ac9d2abce0375b7f5e325"
+        }
+      ]
+    }
+  ]
+}
