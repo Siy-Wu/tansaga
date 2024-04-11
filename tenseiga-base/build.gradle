@@ -32,14 +32,14 @@ android {
 }
 
 afterEvaluate {
-    publishing {
+   /* publishing {
         publications {
             maven(MavenPublication) {
                 groupId 'coder.siy'
                 artifactId 'tenseiga'
                 version '1.0.0'
                 //若是war包，就写components.web,若是jar包，就写components.java
-                from components.release
+                from components.java
             }
         }
         repositories {
@@ -47,7 +47,7 @@ afterEvaluate {
                 url = uri("../repo")
             }
         }
-    }
+    }*/
 }
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.72"
