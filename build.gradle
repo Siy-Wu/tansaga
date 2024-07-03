@@ -1,22 +1,21 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
+import static org.gradle.kotlin.dsl.KotlinDependencyExtensionsKt.embeddedKotlinVersion
 
 buildscript {
-//    ext.kotlin_v = '1.5.31'
-    ext.kotlin_v = '1.3.72'
+    ext.kotlin_v = embeddedKotlinVersion
 
     repositories {
         mavenCentral()
         google()
         maven { url 'https://jitpack.io' }
-          maven{
-            url "localrepo"
-        }
+//          maven{
+//            url "localrepo"
+//        }
     }
     dependencies {
-        classpath "com.android.tools.build:gradle:3.4.3"
+        classpath 'com.android.tools.build:gradle:8.5.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlin_v}"
 
-        classpath 'coder.siy:tenseiga-plugin:1.0.0'
+//        classpath 'coder.siy:tenseiga-plugin:1.0.0'
         /* 👇👇👇👇 引用 Booster Gradle 插件 👇👇👇👇 */
       //  classpath "com.didiglobal.booster:booster-gradle-plugin:${rootProject.ext.booster_version}"
     }

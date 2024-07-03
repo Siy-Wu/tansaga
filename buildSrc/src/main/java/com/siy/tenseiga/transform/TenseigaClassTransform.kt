@@ -1,9 +1,9 @@
 package com.siy.tenseiga.transform
 
-import com.android.build.api.transform.TransformInvocation
 import com.didiglobal.booster.kotlinx.touch
 import com.didiglobal.booster.transform.TransformContext
 import com.didiglobal.booster.transform.asm.ClassTransformer
+import com.google.auto.service.AutoService
 import com.siy.tenseiga.asmtools.forDebug
 import com.siy.tenseiga.base.tools.asIterable
 import com.siy.tenseiga.entity.TransformInfo
@@ -23,6 +23,7 @@ import java.io.PrintWriter
  * @author  Siy
  * @since  2022/5/26
  */
+@AutoService(ClassTransformer::class)
 class TenseigaClassTransform() : ClassTransformer {
 
     /**
@@ -37,15 +38,13 @@ class TenseigaClassTransform() : ClassTransformer {
 
     override fun onPreTransform(context: TransformContext) {
         this.logger = context.getReport("report.txt").touch().printWriter()
+        this.logger.println("parse start")
+
 
         //获取class输入路径
-        (context as? TransformInvocation)?.inputs?.asSequence()?.map {
-            it.jarInputs + it.directoryInputs
-        }?.flatten()?.map { input ->
-            input.file
-        }?.filter {
+        context.compileClasspath.asSequence().filter {
             it.isDirectory
-        }?.let {
+        }.let {
             transformInfo = TenseigaParser().parse(it)
 
             logger.println(transformInfo.toString())
@@ -105,6 +104,7 @@ class TenseigaClassTransform() : ClassTransformer {
 
     override fun transform(context: TransformContext, klass: ClassNode): ClassNode {
         //如果没有注册任何转换器就直接返回
+
         val classNodeTransform = registerTransform() ?: return klass
 
         classNodeTransform.visitorClassNode(context, klass)

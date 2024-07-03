@@ -6,19 +6,19 @@ buildscript {
     }
 
     dependencies {
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.3.72"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_v"
     }
 }
 
 apply plugin: 'kotlin'
 
-compileKotlin {
+/*compileKotlin {
     kotlinOptions.jvmTarget = JavaVersion.VERSION_1_8
 }
 
 compileTestKotlin {
     kotlinOptions.jvmTarget = JavaVersion.VERSION_1_8
-}
+}*/
 
 sourceSets {
     main {
@@ -42,12 +42,12 @@ dependencies {
     compileOnly localGroovy()
     compileOnly gradleApi()
 
-    implementation  "com.android.tools.build:gradle:3.4.3"
+    implementation 'com.android.tools.build:gradle:8.5.0'
 
 //    implementation project(':tenseiga-base')
     /* 👇👇👇👇 引用这两个模块 👇👇👇👇 */
-    implementation "com.didiglobal.booster:booster-api:3.2.0"
-    implementation "com.didiglobal.booster:booster-transform-asm:3.2.0"
+    implementation "com.didiglobal.booster:booster-api:5.0.0-rc1"
+    implementation "com.didiglobal.booster:booster-transform-asm:5.0.0-rc1"
 }
 
 

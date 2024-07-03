@@ -1,5 +1,7 @@
-buildscript {
+import static org.gradle.kotlin.dsl.KotlinDependencyExtensionsKt.getEmbeddedKotlinVersion
 
+buildscript {
+    ext.kotlin_v = embeddedKotlinVersion
     repositories {
         mavenCentral()
         google()
@@ -7,20 +9,20 @@ buildscript {
     }
 
     dependencies {
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.3.72"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlin_v}"
     }
 }
 
 apply plugin: 'kotlin'
 apply plugin: 'kotlin-kapt'
-
+/*
 compileKotlin {
     kotlinOptions.jvmTarget = JavaVersion.VERSION_1_8
 }
 
 compileTestKotlin {
     kotlinOptions.jvmTarget = JavaVersion.VERSION_1_8
-}
+}*/
 
 repositories {
     mavenLocal()
@@ -34,10 +36,23 @@ dependencies {
     compileOnly localGroovy()
     compileOnly gradleApi()
 
-    implementation "com.android.tools.build:gradle:3.4.3"
+    implementation 'com.android.tools.build:gradle:8.5.0'
 
     /* 👇👇👇👇 引用这两个模块 👇👇👇👇 */
-   // kapt "com.google.auto.service:auto-service:1.0"
-    implementation "com.didiglobal.booster:booster-api:3.2.0"
-    implementation "com.didiglobal.booster:booster-transform-asm:3.2.0"
+    kapt "com.google.auto.service:auto-service:1.0"
+    implementation "com.didiglobal.booster:booster-gradle-plugin:5.0.0-rc1"
+    implementation "com.didiglobal.booster:booster-api:5.0.0-rc1"
+    implementation "com.didiglobal.booster:booster-transform-asm:5.0.0-rc1"
+}
+
+apply plugin: 'java-gradle-plugin'
+gradlePlugin {
+    plugins {
+        boosterPlugin {
+            id = 'com.siy.tenseiga.local'
+            displayName = "${id}.gradle.plugin"
+            description = project.description ?: project.name
+            implementationClass = 'com.didiglobal.booster.gradle.BoosterPlugin'
+        }
+    }
 }

@@ -1,21 +1,24 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
-//apply plugin: "com.siy.tenseiga.local"
-apply plugin: "com.siy.tenseiga"
+apply plugin: "com.siy.tenseiga.local"
+//apply plugin: "com.siy.tenseiga"
 
 android {
-    compileSdkVersion 32
+
+    compileSdkVersion 35
+
+    namespace 'com.siy.tenseiga'
 
     defaultConfig {
         applicationId "com.siy.tenseiga"
         minSdkVersion 21
-        targetSdkVersion 32
+        targetSdkVersion 35
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
-        javaCompileOptions.annotationProcessorOptions.includeCompileClasspath = true
+        // javaCompileOptions.annotationProcessorOptions.includeCompileClasspath = true
     }
 
     buildTypes {
