@@ -12,13 +12,6 @@ buildscript {
 
 apply plugin: 'kotlin'
 
-/*compileKotlin {
-    kotlinOptions.jvmTarget = JavaVersion.VERSION_1_8
-}
-
-compileTestKotlin {
-    kotlinOptions.jvmTarget = JavaVersion.VERSION_1_8
-}*/
 
 sourceSets {
     main {
@@ -37,14 +30,13 @@ repositories {
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar", "*.aar"])
-//    implementation fileTree(dir: '..\\buildSrc\\libs', include: ['*.jar'])
+
 
     compileOnly localGroovy()
     compileOnly gradleApi()
 
     implementation 'com.android.tools.build:gradle:8.5.0'
 
-//    implementation project(':tenseiga-base')
     /* 👇👇👇👇 引用这两个模块 👇👇👇👇 */
     implementation "com.didiglobal.booster:booster-api:5.0.0-rc1"
     implementation "com.didiglobal.booster:booster-transform-asm:5.0.0-rc1"

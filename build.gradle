@@ -7,17 +7,15 @@ buildscript {
         mavenCentral()
         google()
         maven { url 'https://jitpack.io' }
-//          maven{
-//            url "localrepo"
-//        }
+          maven{
+            url "localrepo"
+        }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:8.5.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlin_v}"
 
-//        classpath 'coder.siy:tenseiga-plugin:1.0.0'
-        /* 👇👇👇👇 引用 Booster Gradle 插件 👇👇👇👇 */
-      //  classpath "com.didiglobal.booster:booster-gradle-plugin:${rootProject.ext.booster_version}"
+        classpath 'coder.siy:tenseiga-plugin:1.0.0'
     }
 }
 

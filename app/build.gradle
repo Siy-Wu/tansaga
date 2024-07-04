@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
-apply plugin: "com.siy.tenseiga.local"
-//apply plugin: "com.siy.tenseiga"
+//apply plugin: "com.siy.tenseiga.local"
+apply plugin: "com.siy.tenseiga"
 
 android {
 
@@ -17,8 +17,6 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-
-        // javaCompileOptions.annotationProcessorOptions.includeCompileClasspath = true
     }
 
     buildTypes {
