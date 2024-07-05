@@ -77,7 +77,13 @@ class BoosterPlugin : Plugin<Project> {
             ) {
                 it.transformers = loadTransformers(project.buildscript.classLoader)
                 it.variant = variant
-                it.applicationId = variant.namespace.get()
+                val nameSpace = try {
+                    variant.namespace.get()
+                }catch (e:Exception){
+                    "com.yuxiu.${variant.name}"
+                }
+                System.err.println("namespace:$nameSpace")
+                it.applicationId = nameSpace
                 it.bootClasspath = androidComponents.sdkComponents.bootClasspath
             }
             variant.artifacts.forScope(ScopedArtifacts.Scope.ALL)

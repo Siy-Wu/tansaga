@@ -38,11 +38,11 @@
         {
           "name": "tenseiga-plugin-1.0.0.jar",
           "url": "tenseiga-plugin-1.0.0.jar",
-          "size": 135554,
-          "sha512": "03d3894c70235cb0064e9e51e54ec10a5cf3439cfb4d6801dfb18e03c81fe6ca0521b4e3911690c261de877eee4202d6519536522a2319be1009771353e95554",
-          "sha256": "46de01b24e5fdf7523a2b21457eb6ebb8120e2c502585e5e79fdcf99284eee16",
-          "sha1": "7b881d4c0dda4fe1ac0d508dbc4173b08bbd7de3",
-          "md5": "fc045d29b09c3a968990d6b395243c19"
+          "size": 180430,
+          "sha512": "bbc926717d03c71817f4d1475f9a47a218c177b42b7aec603b54309ba2bd3f520a6290eeb91743e0b74c2401c0322b32bfc2b37a20dfeb6784a53ddf8a19560d",
+          "sha256": "94b6549ab02a20e90a9ee29a10807852f9c2d595d1c2c475d09586a2ef773ba7",
+          "sha1": "bb2e20c2040a7b215e512384c341a7404461a7fb",
+          "md5": "4d458ba4133e3016b0c0b219ef42f5c4"
         }
       ]
     },
@@ -63,13 +63,6 @@
           "module": "gradle",
           "version": {
             "requires": "8.5.0"
-          }
-        },
-        {
-          "group": "com.didiglobal.booster",
-          "module": "booster-gradle-plugin",
-          "version": {
-            "requires": "5.0.0-rc1"
           }
         },
         {
@@ -98,11 +91,11 @@
         {
           "name": "tenseiga-plugin-1.0.0.jar",
           "url": "tenseiga-plugin-1.0.0.jar",
-          "size": 135554,
-          "sha512": "03d3894c70235cb0064e9e51e54ec10a5cf3439cfb4d6801dfb18e03c81fe6ca0521b4e3911690c261de877eee4202d6519536522a2319be1009771353e95554",
-          "sha256": "46de01b24e5fdf7523a2b21457eb6ebb8120e2c502585e5e79fdcf99284eee16",
-          "sha1": "7b881d4c0dda4fe1ac0d508dbc4173b08bbd7de3",
-          "md5": "fc045d29b09c3a968990d6b395243c19"
+          "size": 180430,
+          "sha512": "bbc926717d03c71817f4d1475f9a47a218c177b42b7aec603b54309ba2bd3f520a6290eeb91743e0b74c2401c0322b32bfc2b37a20dfeb6784a53ddf8a19560d",
+          "sha256": "94b6549ab02a20e90a9ee29a10807852f9c2d595d1c2c475d09586a2ef773ba7",
+          "sha1": "bb2e20c2040a7b215e512384c341a7404461a7fb",
+          "md5": "4d458ba4133e3016b0c0b219ef42f5c4"
         }
       ]
     }
