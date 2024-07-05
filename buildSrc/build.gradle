@@ -32,7 +32,7 @@ dependencies {
 
     /* 👇👇👇👇 引用这两个模块 👇👇👇👇 */
     kapt "com.google.auto.service:auto-service:1.0"
-    implementation "com.didiglobal.booster:booster-gradle-plugin:5.0.0-rc1"
+//    implementation "com.didiglobal.booster:booster-gradle-plugin:5.0.0-rc1"
     implementation "com.didiglobal.booster:booster-api:5.0.0-rc1"
     implementation "com.didiglobal.booster:booster-transform-asm:5.0.0-rc1"
 }

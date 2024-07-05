@@ -70,7 +70,7 @@ public class HookJava {
         if (Objects.equals(name, Settings.Secure.ANDROID_ID)) {
             Log.e("siy", "hook 之前");
             String androidId = Settings.System.getString(contentresolver, name);
-            Log.e("siy", "hook 之后"+Log.e("siy",Log.getStackTraceString(new Throwable())));
+            Log.e("siy", "hook 之后" + Log.e("siy", Log.getStackTraceString(new Throwable())));
 
             return androidId;
         } else {
@@ -83,7 +83,7 @@ public class HookJava {
     @TargetClass(value = "android.util.Log")
     @Filter(include = {"com.siy.tenseiga.MainActivity"})
     public static int hookSysLogd(String tag, String msg) {
-        return Log.e(tag, msg);
+        return Log.e(tag, "HookJava:" + msg);
     }
 
 

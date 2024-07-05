@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
-//apply plugin: "com.siy.tenseiga.local"
-apply plugin: "com.siy.tenseiga"
+apply plugin: "com.siy.tenseiga.local"
+//apply plugin: "com.siy.tenseiga"
 
 android {
 
@@ -33,8 +33,11 @@ android {
 
 dependencies {
     testImplementation 'junit:junit:4.13.2'
-    implementation "com.didiglobal.booster:booster-transform-asm:5.0.0-rc1"
     implementation fileTree(dir: "libs", include: ["*.jar", "*.aar"])
+    implementation 'org.ow2.asm:asm:9.1'
+    implementation 'org.ow2.asm:asm-analysis:9.2'
+    implementation 'org.ow2.asm:asm-tree:9.2'
+    implementation 'org.ow2.asm:asm-util:9.2'
     implementation 'com.google.android.material:material:1.6.0'
     //implementation "com.github.ssiyy.tenseiga:tenseiga:v1.0.4"
     implementation project(':tenseiga-base')

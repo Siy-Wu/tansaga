@@ -1,7 +1,5 @@
-import static org.gradle.kotlin.dsl.KotlinDependencyExtensionsKt.embeddedKotlinVersion
-
 buildscript {
-    ext.kotlin_v = embeddedKotlinVersion
+    ext.kotlin_v = "1.6.21"
 
     repositories {
         mavenCentral()
